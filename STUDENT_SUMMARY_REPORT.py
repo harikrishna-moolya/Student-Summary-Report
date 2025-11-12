@@ -3,10 +3,10 @@ import random
 import csv
 
 
-"""CREATING RANDOM STUDENTS "DATA"""
+"""CREATING RANDOM STUDENTS DATA"""
 
 
-"""data = {
+data = {
     "Name": ["Hari", "Krishna", "Meena", "John", "Ravi", "Sita", "Anil", "Priya", "Karan", "Divya", 
                    "Amit", "Sneha", "Raj", "Neha", "Vijay", "Rohan", "Pooja", "Deepak", "Gauri", "Suresh",
                    "Reena", "Manoj", "Nisha", "Kiran", "Arjun", "Tina", "Vikas", "Anita", "Rahul", "Lakshmi",
@@ -17,7 +17,7 @@ import csv
 }
 
 d1=pd.DataFrame(data)
-d1.to_csv("students.csv", mode='a',index=False)"""
+d1.to_csv("students.csv", mode='a',header=True,index=False)
 
 
 """CREATING CODE TO READ CSV FILE"""
@@ -54,4 +54,5 @@ summary_df = pd.DataFrame(summary_data)
 summary_df.to_csv("student_summary.csv", index=False)
 
 df1=pd.read_csv("student_summary.csv")
+
 print(df1)
